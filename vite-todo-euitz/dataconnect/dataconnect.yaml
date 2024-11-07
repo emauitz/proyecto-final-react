@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "vite-todo-euitz"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "vite-todo-euitz-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
